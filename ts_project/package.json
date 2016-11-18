@@ -1,0 +1,21 @@
+{
+  "name": "nodejs_project_with_ts",
+  "version": "1.0.0",
+  "description": "## 事前準備",
+  "author": "Dohyoung.Gim@zealot.co.jp",
+  "scripts": {
+    "start": "node app/app.js",
+    "test": "gulp test",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-tslint": "^6.1.3",
+    "gulp-typescript": "^3.1.3",
+    "mocha": "^3.1.2",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.10"
+  }
+}

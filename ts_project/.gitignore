@@ -84,3 +84,8 @@ jspm_packages
 ### Typings ###
 ## Ignore downloaded typings
 typings
+
+### Project ###
+app/
+test/
+coverage/
