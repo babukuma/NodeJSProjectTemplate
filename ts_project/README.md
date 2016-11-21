@@ -577,7 +577,7 @@ Lines        : 97.06% ( 33/34 )
 ```
 
     * output report file : ./coverage/lcov-report/index.html
-![Coverage report](coverage.png)
+![Coverage report](../coverage.png)
 
 ---
 
