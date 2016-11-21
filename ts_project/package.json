@@ -1,7 +1,7 @@
 {
   "name": "nodejs_project_with_ts",
   "version": "1.0.0",
-  "description": "## 事前準備",
+  "description": "ts_project",
   "author": "Dohyoung.Gim@zealot.co.jp",
   "scripts": {
     "start": "node app/app.js",
