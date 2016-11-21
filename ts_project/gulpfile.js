@@ -11,17 +11,23 @@ const mocha = require('gulp-mocha');
 const istanbul = require('gulp-istanbul');
 
 gulp.task('build', () => {
-    var tsResult = tsProject.src()
+    var tsResult = gulp.src("src/app/**/*.ts")
         .pipe(tslint({
             tslint: require("tslint"),
             formatter: "verbose"
         }))
         .pipe(tslint.report())
         .pipe(tsProject());
-    return tsResult.js.pipe(gulp.dest('.'));
+    return tsResult.js.pipe(gulp.dest('app'));
 });
 
-gulp.task('pre-test', function() {
+gulp.task('compile_test', () => {
+    var tsResult = gulp.src("src/test/**/*.ts")
+        .pipe(tsProject());
+    return tsResult.js.pipe(gulp.dest('test'));
+});
+
+gulp.task('pre-test', function () {
     return gulp.src('app/**/*.js')
         // Covering files
         .pipe(istanbul())
@@ -29,7 +35,7 @@ gulp.task('pre-test', function() {
         .pipe(istanbul.hookRequire());
 });
 
-gulp.task('test', ['pre-test'], () => {
+gulp.task('test', ['compile_test', 'pre-test'], () => {
     return gulp.src("test/**/*_test.js")
         // Unit test
         .pipe(mocha())
