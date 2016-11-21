@@ -1,12 +1,12 @@
 {
-  "name": "nodejs_project_with_ts",
+  "name": "js_project",
   "version": "1.0.0",
-  "description": "## 事前準備",
+  "description": "js_project",
   "author": "Dohyoung.Gim@zealot.co.jp",
   "scripts": {
     "start": "node app/app.js",
     "test": "gulp test",
-    "build": "gulp build"
+    "lint": "gulp lint"
   },
   "devDependencies": {
     "eslint": "^3.10.2",

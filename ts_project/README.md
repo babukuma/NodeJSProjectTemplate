@@ -253,7 +253,7 @@ gulp.task('default', ['build', 'test']);
 
 ### 9. create a ignore file
 
-gitもしくはsubversion用のignore
+VCS(git, subversion)用のignore
 
 ```
 # gitの場合
