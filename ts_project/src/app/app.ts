@@ -5,7 +5,7 @@ import { Log } from "./util/log";
 import { default as Module01, Module02 } from "./module1/module_sample";
 
 let server = http.createServer();
-server.on("request", function(request: http.IncomingMessage, response: http.ServerResponse) {
+server.on("request", function (request: http.IncomingMessage, response: http.ServerResponse) {
     Log.info("request..");
     Log.debug("request url:" + request.url);
 

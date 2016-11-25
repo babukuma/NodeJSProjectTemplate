@@ -86,7 +86,7 @@ jspm_packages
 typings
 
 ### Project ###
-app
-test
-coverage
-!src
+app/
+test/
+coverage/
+!src/**/*.ts
